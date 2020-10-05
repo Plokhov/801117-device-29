@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Mikhail Plokhov](https://up.htmlacademy.ru/htmlcss/29/user/801117).
-* Наставник: `Неизвестно`.
+* Студент: [Mikhail Plokhov](https://htmlacademy.ru/profile/id801117).
+* Наставник: [Сергей Харлов](https://htmlacademy.ru/profile/links).
 
 ---
 
