@@ -63,6 +63,15 @@ img {
 .button {
   position: relative;
   box-sizing: content-box;
+
+  /* Да, я знаю про сокращения,
+  просто когда я описываю маржины и паддиниги
+  я специально расписываю полность чтобы было удобно,
+  Вадим Макеев про это в одной из лекциий 
+  говорил, типо мол зачем деражать в голове правила сокращений,
+  ладно когда простое, а когда с тремя параметрами то сложно и
+  самому писать и другим читать, лучше явно прописать.
+  Ну и я так попробовал, вроде удобно)) */
   padding-top: 9px;
   padding-right: 43px;
   padding-bottom: 9px;
@@ -79,7 +88,7 @@ img {
   border: none;
   background: none;
 
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .button::before {
@@ -387,6 +396,169 @@ img {
 .contacts__button {
   padding-left: 40px;
   padding-right: 40px;
+}
+
+/* CATALOG */
+.catalog__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__item-title {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.catalog__item-price {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+/* breadcrumbs-list */
+.breadcrumbs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs-list__link {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.breadcrumbs-list__link:hover,
+.breadcrumbs-list__link:focus {
+  opacity: 0.6;
+}
+
+.breadcrumbs-list__link:active {
+  opacity: 0.1;
+}
+
+/* sort */
+.sort__title {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sort__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sort__link {
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sort__link:hover,
+.sort__link:focus {
+  opacity: 0.6;
+}
+
+.sort__link:active {
+  opacity: 1;
+}
+
+/* filter */
+.filter__title {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.filter__group-title {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+
+  color: var(--basic-black);
+}
+
+.filter__label {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.filter__color-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter__bluetooth-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* pagination */
+.pagination {
+  background-color: #ebebeb;
+}
+
+.pagination__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination__link {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #000000;
+  opacity: 0.3;
+}
+
+.pagination__link:hover,
+.pagination__link:focus {
+  opacity: 0.6;
+}
+
+.pagination__link--active,
+.pagination__link:active {
+  opacity: 1;
+}
+
+.pagination__button {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+}
+
+.pagination__button:hover,
+.pagination__button:focus {
+  background-color: #d9d9d9;
+}
+
+.pagination__button:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* page-footer */
