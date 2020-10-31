@@ -64,14 +64,6 @@ img {
   position: relative;
   box-sizing: content-box;
 
-  /* Да, я знаю про сокращения,
-  просто когда я описываю маржины и паддиниги
-  я специально расписываю полность чтобы было удобно,
-  Вадим Макеев про это в одной из лекциий 
-  говорил, типо мол зачем деражать в голове правила сокращений,
-  ладно когда простое, а когда с тремя параметрами то сложно и
-  самому писать и другим читать, лучше явно прописать.
-  Ну и я так попробовал, вроде удобно)) */
   padding-top: 9px;
   padding-right: 43px;
   padding-bottom: 9px;
@@ -356,6 +348,51 @@ img {
   padding: 0;
 }
 
+.producers__link {
+  display: block;
+  width: 260px;
+  height: 100px;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.producers__link--dji {
+  background-image: url('../img/logo_dji.png');
+}
+
+.producers__link--dji:hover,
+.producers__link--dji:focus {
+  background-image: url('../img/logo_dji-color.png');
+}
+
+.producers__link--sp {
+  background-image: url('../img/logo_SP.png');
+}
+
+.producers__link--sp:hover,
+.producers__link--sp:focus {
+  background-image: url('../img/logo_SP-color.png');
+}
+
+.producers__link--gp {
+  background-image: url('../img/logo_gopro.png');
+}
+
+.producers__link--gp:hover,
+.producers__link--gp:focus {
+  background-image: url('../img/logo_gopro-color.png');
+}
+
+.producers__link--vive {
+  background-image: url('../img/logo_vive.png');
+}
+
+.producers__link--vive:hover,
+.producers__link--vive:focus {
+  background-image: url('../img/logo_vive-color.png');
+}
+
 /* about-us */
 .about-us__title {
   font-family: Gilroy;
@@ -464,7 +501,7 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
-  color: #000000;
+  color: var(--basic-black);
   opacity: 0.3;
 }
 
@@ -532,7 +569,7 @@ img {
   font-size: 16px;
   line-height: 20px;
 
-  color: #000000;
+  color: var(--basic-black);
   opacity: 0.3;
 }
 

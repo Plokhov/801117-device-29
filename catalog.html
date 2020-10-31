@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Device</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -10,7 +13,7 @@
       <a class="page-header__logo-link" href="index.html">
         <img
           class="page-header__logo-image"
-          src="https://via.placeholder.com/150x100"
+          src="img/logo-device.svg"
           width="163"
           height="35"
           alt="Логотип интернет-магазина гаджетов Device"
@@ -18,19 +21,16 @@
       </a>
       <nav class="page-header__navigation">
         <section class="page-header__user-navigation">
-          <h2>Меню пользователя</h2>
+          <h2 class="visually-hidden">
+            Меню пользователя
+          </h2>
           <ul class="user-list">
             <li class="user-list__item">
               Поиск
             </li>
             <li class="user-list__item">
               <a class="user-list__link" href="#">
-                Валентин Петухов
-              </a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">
-                Выйти
+                Войти
               </a>
             </li>
             <li class="user-list__item">
@@ -47,10 +47,12 @@
         </section>
 
         <section class="page-header__site-navigation">
-          <h2>Меню сайта</h2>
+          <h2 class="visually-hidden">
+            Меню сайта
+          </h2>
           <ul class="site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
+              <a class="site-list__link site-list__link--catalog">
                 Каталог товаров
               </a>
               <ul class="page-header__catalog-navigation catalog-list">
@@ -109,6 +111,67 @@
             </li>
           </ul>
         </section>
+
+        <ul class="page-header__site-navigation site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">
+              Каталог товаров
+            </a>
+            <ul class="page-header__catalog-navigation catalog-list">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="#">
+                  Виртуальная реальность
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="catalog.html">
+                  Моноподы для селфи
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="#">
+                  Экшн камеры
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="#">
+                  Фитнес-браслеты
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="#">
+                  Умные часы
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="#">
+                  Квадракоптеры
+                </a>
+              </li>
+            </ul>
+            <button
+              class="page-header__catalog-button"
+              type="button"
+            >
+              Разделы каталога открыть
+            </button>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">
+              Доставка
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">
+              Гарантия
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -185,10 +248,10 @@
             </p>
             <img
               class="catalog__item-image"
-              src="https://via.placeholder.com/150x100"
+              src="img/item-1.jpg"
               width="360"
               height="380"
-              alt="Фото любительской селфипалки"
+              alt="Любительская селфи-палка"
             >
           </li>
           <li class="catalog__item">
@@ -200,10 +263,10 @@
             </p>
             <img
               class="catalog__item-image"
-              src="https://via.placeholder.com/150x100"
+              src="img/item-2.jpg"
               width="360"
               height="380"
-              alt="Фото профессиональной селфи-палки"
+              alt="Профессиональная селфи-палка"
             >
           </li>
           <li class="catalog__item">
@@ -215,10 +278,10 @@
             </p>
             <img
               class="catalog__item-image"
-              src="https://via.placeholder.com/150x100"
+              src="img/item-3.jpg"
               width="360"
               height="380"
-              alt="Фото непотопляемой селфи-палки"
+              alt="Непотопляемая селфи-палка"
             >
           </li>
           <li class="catalog__item">
@@ -230,10 +293,10 @@
             </p>
             <img
               class="catalog__item-image"
-              src="https://via.placeholder.com/150x100"
+              src="img/item-4.jpg"
               width="360"
               height="380"
-              alt="Фото селфи-палки Следуй за мной"
+              alt="Cелфи-палка Следуй за мной"
             >
           </li>
         </ul>
@@ -279,7 +342,7 @@
       <a class ="page-footer__logo-link" href="#">
         <img
           class="page-footer__logo-image"
-          src="https://via.placeholder.com/150x100"
+          src="img/logo-device-footer.svg"
           width="163"
           height="35"
           alt="Логотип интернет-магазина гаджетов Device"
