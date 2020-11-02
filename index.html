@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
@@ -7,8 +7,8 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header class="page-header">
+  <body class="page-body">
+    <header class="page-header page-header--catalog">
       <a class="page-header__logo-link">
         <img
           class="page-header__logo-image"
@@ -20,23 +20,25 @@
       </a>
       <nav class="page-header__navigation">
         <section class="page-header__user-navigation">
-          <h2>Меню пользователя</h2>
+          <h2 class="visually-hidden">
+            Меню пользователя
+          </h2>
           <ul class="user-list">
-            <li class="user-list__item">
+            <li class="user-list__item user-list__item--search">
               Поиск
             </li>
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">
+            <li class="user-list__item user-list__item--enter">
+              <a class="user-list__link user-list__link--enter" href="#">
                 Войти
               </a>
             </li>
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">
+            <li class="user-list__item user-list__item--compare">
+              <a class="user-list__link user-list__link--compare" href="#">
                 Сравнить
               </a>
             </li>
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">
+            <li class="user-list__item user-list__item--basket">
+              <a class="user-list__link user-list__link--basket" href="#">
                 Корзина
               </a>
             </li>
@@ -44,26 +46,22 @@
         </section>
 
         <section class="page-header__site-navigation">
-          <h2>Меню сайта</h2>
+          <h2 class="visually-hidden">
+            Меню сайта
+          </h2>
           <ul class="site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
+              <a class="site-list__link site-list__link--catalog" href="catalog.html">
                 Каталог товаров
               </a>
-              <ul class="page-header__catalog-navigation catalog-list">
+              <ul
+                class="site-list__catalog-navigation
+                  catalog-list
+                  visually-hidden"
+              >
                 <li class="catalog-list__item">
                   <a class="catalog-list__link" href="#">
                     Виртуальная реальность
-                  </a>
-                </li>
-                <li class="catalog-list__item">
-                  <a class="catalog-list__link" href="catalog.html">
-                    Моноподы для селфи
-                  </a>
-                </li>
-                <li class="catalog-list__item">
-                  <a class="catalog-list__link" href="#">
-                    Экшн камеры
                   </a>
                 </li>
                 <li class="catalog-list__item">
@@ -73,20 +71,32 @@
                 </li>
                 <li class="catalog-list__item">
                   <a class="catalog-list__link" href="#">
+                    Квадракоптер
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="catalog.html">
+                    Моноподы для селфи
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="#">
                     Умные часы
                   </a>
                 </li>
                 <li class="catalog-list__item">
                   <a class="catalog-list__link" href="#">
-                    Квадракоптеры
+                    Экшн камеры
                   </a>
                 </li>
               </ul>
               <button
-                class="page-header__catalog-button"
+                class="site-list__catalog-button"
                 type="button"
               >
-                Разделы каталога открыть
+                <span class="visually-hidden">
+                  Разделы каталога открыть
+                </span>
               </button>
             </li>
             <li class="site-list__item">
@@ -110,10 +120,14 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Магазин Device</h1>
+      <h1 class="page-main__title visually-hidden">
+        Магазин Device
+      </h1>
 
       <section class="page-main__promo promo">
-        <h2 class="promo__title">Промо-акция</h2>
+        <h2 class="promo__title visually-hidden">
+          Промо-акция
+        </h2>
         <ul class="promo__list">
           <li class="promo__item">
             <img
@@ -121,13 +135,13 @@
               src="img/promo_slid-1.png"
               width="384"
               height="486"
-              alt="Три селфи-палки"
+              alt="Длинная селфи-палка"
             >
             <p class="promo__number">
               01
             </p>
             <h3 class="promo__title">
-              Делай селфи, как Бен Стиллер!
+              Делай селфи,<br> как Бен Стиллер!
             </h3>
             <p class="promo__description">
               Самая длинная палка для селфи доступна в нашем магазине.
@@ -178,19 +192,19 @@
               </tr>
             </table>
           </li>
-          <li class="promo__item">
+          <li class="promo__item visually-hidden">
             <img
               class="promo__image"
               src="img/promo_slid-2.png"
               width="345"
               height="485"
-              alt="Большой браслетик"
+              alt="Мотивирующий фитнес-браслет"
             >
             <p class="promo__number">
               02
             </p>
             <h3 class="promo__title">
-              Худеем правильно!
+              Худеем<br> правильно!
             </h3>
             <p class="promo__description">
               Мотивирующие фитнес браслеты помогут найти в себе силы
@@ -229,13 +243,13 @@
               </tr>
             </table>
           </li>
-          <li class="promo__item">
+          <li class="promo__item visually-hidden">
             <img
               class="promo__image"
               src="img/promo_slid-3.png"
               width="526"
               height="334"
-              alt="Вертолетик с джедайским мечом"
+              alt="Квадрокоптер с лазером"
             >
             <p class="promo__number">
               03
@@ -290,7 +304,7 @@
       </section>
 
       <section class="page-main__main-catalog main-catalog">
-        <h2 class="main-catalog__title">
+        <h2 class="main-catalog__title visually-hidden">
           Каталог
         </h2>
         <ul class="main-catalog__list">
@@ -382,62 +396,64 @@
       </section>
 
       <section class="page-main__services services">
-        <h2 class="services__title">
-          Сервисы
-        </h2>
-        <ul class="services__slider-list">
-          <li class="services__slider-item">
-            <button class="services__slider-button">
-              Доставка
-            </button>
-          </li>
-          <li class="services__slider-item">
-            <button class="services__slider-button">
-              Гарантия
-            </button>
-          </li>
-          <li class="services__slider-item">
-            <button class="services__slider-button">
-              Кредит
-            </button>
-          </li>
-        </ul>
-        <ul class="services__list">
-          <li class="services__item">
-            <h3 class="services__item-title">
-              Доставка
-            </h3>
-            <p class="services__item-description">
-              Мы с удовольствием доставим ваш товар прямо к вашему
-              подъезду совершенно бесплатно! Ведь мы неплохо заработаем
-              поднимая его на ваш этаж.
-            </p>
-          </li>
-          <li class="services__item">
-            <h3 class="services__item-title">
-              Гарантия
-            </h3>
-            <p class="services__item-description">
-              Если из-за возгорания купленного у нас товара у вас
-              сгорит дом - не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.
-            </p>
-          </li>
-          <li class="services__item">
-            <h3 class="services__item-title">
-              Кредит
-            </h3>
-            <p class="services__item-description">
-              Залезть в долговую яму стало проще! Кредитные
-              консультанты подберут для вас наиболее выгодные условия
-              кредита. Выгодные для нашего банка, разумеется.
-            </p>
-          </li>
-        </ul>
+        <div class="services__container">
+          <h2 class="services__title visually-hidden">
+            Сервисы
+          </h2>
+          <ul class="services__slider-list">
+            <li class="services__slider-item">
+              <button class="services__slider-button button">
+                Доставка
+              </button>
+            </li>
+            <li class="services__slider-item">
+              <button class="services__slider-button button">
+                Гарантия
+              </button>
+            </li>
+            <li class="services__slider-item">
+              <button class="services__slider-button button">
+                Кредит
+              </button>
+            </li>
+          </ul>
+          <ul class="services__list">
+            <li class="services__item">
+              <h3 class="services__item-title">
+                Доставка
+              </h3>
+              <p class="services__item-description">
+                Мы с удовольствием доставим ваш товар прямо к вашему
+                подъезду совершенно бесплатно! Ведь мы неплохо заработаем
+                поднимая его на ваш этаж.
+              </p>
+            </li>
+            <li class="services__item visually-hidden">
+              <h3 class="services__item-title">
+                Гарантия
+              </h3>
+              <p class="services__item-description">
+                Если из-за возгорания купленного у нас товара у вас
+                сгорит дом - не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.
+              </p>
+            </li>
+            <li class="services__item visually-hidden">
+              <h3 class="services__item-title">
+                Кредит
+              </h3>
+              <p class="services__item-description">
+                Залезть в долговую яму стало проще! Кредитные
+                консультанты подберут для вас наиболее выгодные условия
+                кредита. Выгодные для нашего банка, разумеется.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="page-main__producers producers">
-        <h2 class="producers__title">
+        <h2 class="producers__title visually-hidden">
           Логотипы производители
         </h2>
         <ul class="producers__list">
@@ -472,145 +488,193 @@
         </ul>
       </section>
 
-      <section class="page-main__about-us about-us">
-        <h2 class="about-us__title">О нас</h2>
-        <p class="about-us__text">
-          Огромный выбор гаджетов не оставит равнодушным гика,
-          который есть в каждом из нас.
-        </p>
-        <p class="about-us__text">
-          Мы можем доставить ваш товар в самые отдаленные точки России!
-          DEVICE работает со многими транспортными компаниями:
-        </p>
-        <ul class="about-us__company company-list">
-          <li class="company-list__item">
-            Деловые Линии
-          </li>
-          <li class="company-list__item">
-            Автотрейдинг
-          </li>
-          <li class="company-list__item">
-            ЖелДорЭкспедиция
-          </li>
-        </ul>
-        <a class="about-us__button button" href=#>
-          Подробнее о нас
-        </a>
-      </section>
+      <div class="page-main__columns">
+        <section class="page-main__about-us about-us">
+          <h2 class="about-us__title">
+            О нас
+          </h2>
+          <p class="about-us__text">
+            Огромный выбор гаджетов не оставит равнодушным гика,
+            который есть в каждом из нас.
+          </p>
+          <p class="about-us__text about-us__text--last">
+            Мы можем доставить ваш товар в самые отдаленные точки России!
+            DEVICE работает со многими транспортными компаниями:
+          </p>
+          <ul class="about-us__company company-list">
+            <li class="company-list__item">
+              Деловые линии
+            </li>
+            <li class="company-list__item">
+              Автотрейдинг
+            </li>
+            <li class="company-list__item">
+              ЖелДорЭкспедиция
+            </li>
+          </ul>
+          <a class="about-us__button button" href=#>
+            Подробнее о нас
+          </a>
+        </section>
 
-      <section class="page-main__contacts contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <p class="contacts__text">
-          Вы можете забрать товар сами, заехав в наш офис.
-          Заодно, вы сможете проверить работоспособность покупки.
-          Всякое бывает.
-        </p>
-        <a class="contacts__map-link" href="#">
-          <img
-            class="contacts__map-image"
-            src="img/map-1.jpg"
-            width="560"
-            height="222"
-            alt="г. Москва ул. Строителей 15">
-        </a>
-        <a class="contacts__button button" href="#">
-          Напишите нам
-        </a>
-      </section>
+        <section class="page-main__contacts contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__text">
+            Вы можете забрать товар сами, заехав в наш офис.
+            Заодно, вы сможете проверить работоспособность покупки.
+            Всякое бывает.
+          </p>
+          <a class="contacts__map-link" href="#">
+            <img
+              class="contacts__map-image"
+              src="img/map-1.jpg"
+              width="560"
+              height="222"
+              alt="г. Москва ул. Строителей 15">
+          </a>
+          <a class="contacts__button button" href="#">
+            Напишите нам
+          </a>
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer">
-      <a class ="page-footer__logo-link" href="#">
-        <img
-          class="page-footer__logo-image"
-          src="img/logo-device-footer.svg"
-          width="163"
-          height="35"
-          alt="Логотип интернет-магазина гаджетов Device"
-        >
-      </a>
-
-      <section class="page-footer__user-navigation">
-        <h2>Меню пользователя</h2>
-        <ul class="user-list">
-          <li class="user-list__item">
-            <a class="user-list__link" href="#">
-              Войти
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link" href="#">
-              Сравнить
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link" href="#">
-              Корзина
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="page-footer__contacts contacts">
-        <h2>Контакты</h2>
-        <p class="contacts__address">
-          г.Москва, ул. Строителей, 15
-        </p>
-        <p class="contacts__phone">
-          Тел.: +7(495)495-95-95
-        </p>
-      </section>
-
-      <section class="page-footer__site-navigation">
-        <h2>Меню сайта</h2>
-        <ul class="site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              Доставка
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              Гарантия
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="page-footer__social social">
-        <h2>Социальные сети</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              Facebook
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              Instagram
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              Twitter
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <div class="page-footer__copyright copyright">
-        <a
-          class="copyright__link"
-          href="https://htmlacademy.ru/">
-          HTML-academy
+      <div class="page-footer__container">
+        <a class ="page-footer__logo-link">
+          <img
+            class="page-footer__logo-image"
+            src="img/logo-device-footer.svg"
+            width="163"
+            height="35"
+            alt="Логотип интернет-магазина гаджетов Device"
+          >
         </a>
+
+        <section class="page-footer__user-navigation">
+          <h2 class="visually-hidden">
+            Меню пользователя
+          </h2>
+          <ul class="user-list user-list--footer">
+            <li class="user-list__item">
+              <a
+                class="user-list__link
+                  user-list__link--enter
+                  user-list__link--enter-footer"
+                href="#"
+              >
+                Войти
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a
+                class="user-list__link
+                  user-list__link--compare
+                  user-list__link--compare-footer"
+                href="#"
+              >
+                Сравнить
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a
+                class="user-list__link
+                  user-list__link--basket
+                  user-list__link--basket-footer"
+                href="#"
+              >
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="page-footer__contacts">
+          <h2 class="visually-hidden">
+            Контакты
+          </h2>
+          <p class="page-footer__contacts-address">
+            г. Москва, ул. Строителей, 15
+          </p>
+          <p class="page-footer__contacts-phone">
+            Тел.: +7 (495) 495-95-95
+          </p>
+        </section>
+
+        <section class="page-footer__site-navigation">
+          <h2 class="visually-hidden">
+            Меню сайта
+          </h2>
+          <ul class="site-list site-list--footer">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Доставка
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Гарантия
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="page-footer__social social">
+          <h2 class="visually-hidden">
+            Социальные сети
+          </h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a
+                class="social__link social__link--fb"
+                href="#"
+              >
+                <span class="visually-hidden">
+                  Facebook
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--inst"
+                href="#"
+              >
+                <span class="visually-hidden">
+                  Instagram
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--tw"
+                href="#"
+              >
+                <span class="visually-hidden">
+                  Twitter
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <div class="page-footer__copyright copyright">
+          <a
+            class="copyright__link"
+            href="https://htmlacademy.ru/"
+          >
+            <span class="visually-hidden">
+              HTML-academy
+            </span>
+          </a>
+        </div>
       </div>
+
+
     </footer>
   </body>
 </html>
-
