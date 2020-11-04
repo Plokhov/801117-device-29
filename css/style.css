@@ -774,8 +774,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog__list {
-  /* display: flex;
-  flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -783,8 +783,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog__item {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   width: 360px;
   min-height: 432px;
   margin-right: 40px;
@@ -798,15 +798,6 @@ input[type="radio"].visually-hidden {
 .catalog__item:hover .catalog__item-image,
 .catalog__item:focus .catalog__item-image {
   opacity: 0.7;
-}
-
-.catalog__button-compare:hover,
-.catalog__button-compare:focus {
-  color: var(--basic-black);
-}
-
-.catalog__button-compare:active {
-  color: rgba(0, 0, 0, 0.2);
 }
 
 .catalog__item-description {
@@ -845,7 +836,7 @@ input[type="radio"].visually-hidden {
 
 /* breadcrumbs-list */
 .breadcrumbs-list {
-  /* display: flex; */
+  display: flex;
   list-style: none;
 }
 
@@ -870,24 +861,33 @@ input[type="radio"].visually-hidden {
 }
 
 /* sort */
-/* .sort {
+.sort {
   display: flex;
-} */
+  padding-left: 72px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
 .sort__title {
+  margin: 0;
   font-family: Gilroy;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .sort__list {
-  /* display: flex; */
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.sort__item {
+  line-height: 20px;
 }
 
 .sort__link {
@@ -908,12 +908,21 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+.sort__buttons {
+  margin-left: auto;
+  line-height: 20px;
+}
+
 /* filter */
 .filter {
   padding-left: 60px;
 }
 
 .filter__title {
+  padding: 0;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
   font-family: Gilroy;
   font-weight: 800;
   font-size: 16px;
@@ -1007,13 +1016,26 @@ input[type="radio"].visually-hidden {
 
 /* pagination */
 .pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 78px;
+  padding: 25px 30px;
   background-color: #ebebeb;
 }
 
 .pagination__list {
-  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.pagination__item {
+  margin-right: 30px;
+}
+
+.pagination__item:last-child {
+  margin-right: 0;
 }
 
 .pagination__link {
@@ -1038,8 +1060,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination__button {
-  width: 120px;
-  height: 70px;
+  padding: 0;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.1em;
