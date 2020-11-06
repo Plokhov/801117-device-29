@@ -181,7 +181,7 @@
         </h2>
         <ul class="sort__list">
           <li class="sort__item">
-            <a class="sort__link" href="#">
+            <a class="sort__link sort__link--current" href="#">
               По цене
             </a>
           </li>
@@ -197,11 +197,15 @@
           </li>
         </ul>
         <div class="sort__buttons">
-          <a class="sort__button" href="#">
-            Cортировка по возрастающей
+          <a class="sort__button sort__button--up" href="#">
+            <span class="visually-hidden">
+              Cортировка по возрастающей
+            </span>
           </a>
-          <a class="sort__button" href="#">
-            Сортировка по убыванию
+          <a class="sort__button sort__button--down sort__button--current" href="#">
+            <span class="visually-hidden">
+              Сортировка по убыванию
+            </span>
           </a>
         </div>
       </section>
@@ -215,7 +219,7 @@
           method="get"
           action="https://echo.htmlacademy.ru"
         >
-          <fieldset class="filter__group">
+          <fieldset class="filter__group filter__group--cost">
             <legend class="filter__group-title">
               Стоимость
             </legend>
@@ -344,7 +348,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter__group">
+          <fieldset class="filter__group filter__group--bluetooth">
             <legend class="filter__group-title">
               Bluetooth
             </legend>
@@ -400,7 +404,7 @@
                 Любительская селфи-палка
               </h3>
               <p class="catalog__item-price">
-                500 руб.
+                1 100 руб.
               </p>
             </div>
             <img
@@ -434,7 +438,7 @@
                 Непотопляемая<br>селфи-палка
               </h3>
               <p class="catalog__item-price">
-                2 500 руб.
+                1 500 руб.
               </p>
             </div>
 
@@ -452,7 +456,7 @@
                 Cелфи-палка "Следуй за мной"
               </h3>
               <p class="catalog__item-price">
-                4 900 руб.
+                1 900 руб.
               </p>
             </div>
             <img
