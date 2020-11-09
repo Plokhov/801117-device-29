@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -696,13 +696,11 @@
             Ваше имя:
           </label>
           <input
-            class="modal-write__input"
+            class="modal-write__input modal-write__input--name"
             type="text"
             name="name"
             id="name"
             placeholder="Имя Фамилия"
-            value=""
-            required
           >
         </p>
         <p class="modal-write__input-wrapper">
@@ -710,13 +708,11 @@
             Ваш e-mail:
           </label>
           <input
-            class="modal-write__input"
+            class="modal-write__input modal-write__input--email"
             type="email"
             name="e-mail"
             id="e-mail"
             placeholder="email@example.com"
-            value=""
-            required
           >
         </p>
         <p class="modal-write__input-wrapper">
@@ -768,5 +764,7 @@
         </span>
       </button>
     </section>
+
+    <script src="js/write-us.js"></script>
   </body>
 </html>
