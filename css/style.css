@@ -1234,6 +1234,9 @@ input[type="radio"].visually-hidden {
   width: 265px;
   margin: 0;
   padding: 0;
+}
+
+.catalog__item-link {
   font-family: Gilroy;
   font-weight: 800;
   font-size: 18px;
