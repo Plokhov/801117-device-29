@@ -393,7 +393,8 @@ input[type="radio"].visually-hidden {
 }
 
 .search__input:focus + .search__button,
-.search:active .search__button {
+.search:active .search__button,
+.search:focus-within .search__button {
   display: block;
 }
 
@@ -491,6 +492,10 @@ input[type="radio"].visually-hidden {
   background-color: var(--special-yellow);
 }
 
+.catalog-list {
+  display: none;
+}
+
 .catalog-list__item {
   margin-bottom: 14px;
 }
@@ -571,6 +576,11 @@ input[type="radio"].visually-hidden {
 .promo__item {
  display: flex;
  justify-content: space-between;
+}
+
+.promo__item:nth-child(2),
+.promo__item:last-child {
+  display: none;
 }
 
 .promo__image {
