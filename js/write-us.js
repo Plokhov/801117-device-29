@@ -10,8 +10,6 @@ let isStorageSupport = true;
 let storageName = '';
 let srorageEmail = '';
 
-console.log(letterInput);
-
 try {
   storageName = localStorage.getItem('name');
   storageEmail = localStorage.getItem('email');
@@ -56,9 +54,9 @@ writeUsForm.addEventListener('submit', (evt) => {
 
 window.addEventListener('keydown', (evt) => {
   if (evt.keyCode === 27) {
-    if (writeUsPopap.classList.contains("modal-show")) {
+    if (writeUsPopap.classList.contains('modal-show')) {
       evt.preventDefault();
-      writeUsPopap.classList.remove("modal-show");
+      writeUsPopap.classList.remove('modal-show');
       writeUsPopap.classList.remove('modal-error');
     }
   }

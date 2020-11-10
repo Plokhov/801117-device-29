@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
@@ -157,10 +157,10 @@
           <li class="promo__item">
             <img
               class="promo__image"
-              src="img/promo_slid-1.png"
+              src="img/promo-slid-1.png"
               width="384"
               height="486"
-              alt="Длинная селфи-палка"
+              alt="Селфи палка 8 метров длинной и весом 5 киллограмм"
             >
             <div class="promo__info">
               <p class="promo__number">
@@ -205,7 +205,7 @@
           <li class="promo__item">
             <img
               class="promo__image"
-              src="img/promo_slid-2.png"
+              src="img/promo-slid-2.png"
               width="345"
               height="485"
               alt="Мотивирующий фитнес-браслет"
@@ -241,10 +241,10 @@
           <li class="promo__item">
             <img
               class="promo__image"
-              src="img/promo_slid-3.png"
+              src="img/promo-slid-3.png"
               width="526"
               height="334"
-              alt="Квадрокоптер с лазером"
+              alt="Квадрокоптер с лазером, замаскированным под камеру"
             >
             <div class="promo__info">
               <p class="promo__number">
@@ -316,85 +316,46 @@
         <ul class="main-catalog__list">
           <li class="main-catalog__item">
             <a class="main-catalog__link" href="#">
-              <div class="main-catalog__link-background">
-                <img
-                  class="main-catalog__link-icon"
-                  src="img/icon_VR.svg"
-                  width="97"
-                  height="55"
-                  alt=""
-                >
-              </div>
               Виртуальная реальность
             </a>
           </li>
           <li class="main-catalog__item">
-            <a class="main-catalog__link" href="#">
-              <div class="main-catalog__link-background">
-                <img
-                  class="main-catalog__link-icon"
-                  src="img/icon_monopod.svg"
-                  width="86"
-                  height="117"
-                  alt=""
-                >
-              </div>
+            <a
+              class="main-catalog__link main-catalog__link--monopods"
+              href="#"
+            >
               Моноподы<br> для селфи
             </a>
           </li>
           <li class="main-catalog__item">
-            <a class="main-catalog__link" href="#">
-              <div class="main-catalog__link-background">
-                <img
-                  class="main-catalog__link-icon"
-                  src="img/icon_action-camera.svg"
-                  width="71"
-                  height="87"
-                  alt=""
-                >
-              </div>
+            <a
+              class="main-catalog__link main-catalog__link--cameras"
+              href="#"
+            >
               Экшн-камеры
             </a>
           </li>
           <li class="main-catalog__item">
-            <a class="main-catalog__link main-catalog__link--fitnes" href="#">
-              <div class="main-catalog__link-background">
-                <img
-                  class="main-catalog__link-icon"
-                  src="img/icon_fitness-bracelet.svg"
-                  width="107"
-                  height="65"
-                  alt=""
-                >
-              </div>
+            <a
+              class="main-catalog__link main-catalog__link--bracelets"
+              href="#"
+            >
               Фитнес-браслеты
             </a>
           </li>
           <li class="main-catalog__item">
-            <a class="main-catalog__link" href="#">
-              <div class="main-catalog__link-background">
-                <img
-                  class="main-catalog__link-icon"
-                  src="img/icon_smartwatch.svg"
-                  width="56"
-                  height="98"
-                  alt=""
-                >
-              </div>
+            <a
+              class="main-catalog__link main-catalog__link--watches"
+              href="#"
+            >
               Умные часы
             </a>
           </li>
           <li class="main-catalog__item">
-            <a class="main-catalog__link" href="#">
-              <div class="main-catalog__link-background">
-                <img
-                  class="main-catalog__link-icon"
-                  src="img/icon_quadcopter.svg"
-                  width="132"
-                  height="69"
-                  alt=""
-                >
-              </div>
+            <a
+              class="main-catalog__link main-catalog__link--quadcopters"
+              href="#"
+            >
               Квадракоптеры
             </a>
           </li>
@@ -435,7 +396,7 @@
               <p class="services__item-description">
                 Мы с удовольствием доставим ваш товар прямо к вашему<br>
                 подъезду совершенно бесплатно! Ведь мы неплохо<br>
-                заработаем поднимая его на ваш этаж.
+                заработаем, поднимая его на ваш этаж.
               </p>
             </li>
             <li class="services__item services__item--guarantee">
@@ -468,31 +429,47 @@
         </h2>
         <ul class="producers__list">
           <li class="producers__item">
-            <a class="producers__link producers__link--dji" href="#">
-              <span class="visually-hidden">
-                DJI
-              </span>
+            <a class="producers__link" href="#">
+              <img
+                class="producers__image"
+                src="img/logo-dji.png"
+                width="260"
+                height="100"
+                alt="Логотип фирмы производителя DJI"
+              >
             </a>
           </li>
           <li class="producers__item">
-            <a class="producers__link producers__link--sp" href="#">
-              <span class="visually-hidden">
-                SP Gadgets
-              </span>
+            <a class="producers__link" href="#">
+              <img
+                class="producers__image"
+                src="img/logo-sp.png"
+                width="260"
+                height="100"
+                alt="Логотип фирмы производителя SP Gadgets"
+              >
             </a>
           </li>
           <li class="producers__item">
-            <a class="producers__link producers__link--gp" href="#">
-              <span class="visually-hidden">
-                GoPro
-              </span>
+            <a class="producers__link" href="#">
+              <img
+                class="producers__image"
+                src="img/logo-gopro.png"
+                width="260"
+                height="100"
+                alt="Логотип фирмы производителя GoPro"
+              >
             </a>
           </li>
           <li class="producers__item">
-            <a class="producers__link producers__link--vive" href="#">
-              <span class="visually-hidden">
-                Vive
-              </span>
+            <a class="producers__link" href="#">
+              <img
+                class="producers__image"
+                src="img/logo-vive.png"
+                width="260"
+                height="100"
+                alt="Логотип фирмы производителя Vive"
+              >
             </a>
           </li>
         </ul>
@@ -678,7 +655,7 @@
         <div class="page-footer__copyright copyright">
           <a
             class="copyright__link"
-            href="https://htmlacademy.ru/"
+            href="https://htmlacademy.ru/intensive/htmlcss"
           >
             <span class="visually-hidden">
               HTML-academy
@@ -723,9 +700,9 @@
           >
         </p>
         <p class="modal-write__input-wrapper">
-          <span class="modal-write__label">
+          <label class="modal-write__label" for="letter">
             Текст письма:
-          </span>
+          </label>
           <textarea
             class="modal-write__textarea modal-write__letter"
             name="letter"
@@ -753,11 +730,19 @@
       <h2 class="visually-hidden">
         Карта
       </h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947364!2d37.527429316010654!3d55.68703400452986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1605003125004!5m2!1sru!2sru"
+      <img
+        class="modal-map__image"
+        src="img/map-big-1.png"
         width="994"
-        height="593" 
-        allowfullscreen=""
+        height="593"
+        alt="Офис компании по адресу ул. Строителей 15, Москва"
+      >
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947364!2d37.527429316010654!3d55.68703400452986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1605020818314!5m2!1sru!2sru"
+        width="994"
+        height="593"
+        allowfullscreen
+        aria-hidden="false"
         title="Офис компании по адресу ул. Строителей 15, Москва"
       ></iframe>
       <button class="modal-close modal-map__close" type="button">

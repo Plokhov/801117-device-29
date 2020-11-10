@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Device</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
 
@@ -197,11 +197,19 @@
                   <div
                     class="range__toggle range__toggle--min"
                     tabindex="0"
-                  ></div>
+                  >
+                    <span class="visually-hidden">
+                      Контроллер минимальной цены
+                    </span>
+                  </div>
                   <div
                     class="range__toggle range__toggle--max"
                     tabindex="0"
-                  ></div>
+                  >
+                    <span class="visually-hidden">
+                      Контроллер максимальной цены
+                    </span>
+                  </div>
                 </div>
                 <div class="range__price-controls">
                   <label
@@ -433,7 +441,7 @@
                 src="img/item-1.jpg"
                 width="360"
                 height="380"
-                alt=""
+                alt="Любительская селфи-палка"
               >
             </li>
             <li class="catalog__item">
@@ -468,7 +476,7 @@
                 src="img/item-2.jpg"
                 width="360"
                 height="380"
-                alt=""
+                alt="Профессиональная селфи-палка"
               >
             </li>
             <li class="catalog__item">
@@ -504,7 +512,7 @@
                 src="img/item-3.jpg"
                 width="360"
                 height="380"
-                alt=""
+                alt="Непотопляемая селфи-палка"
               >
             </li>
             <li class="catalog__item catalog__item--new">
@@ -539,7 +547,7 @@
                 src="img/item-4.jpg"
                 width="360"
                 height="380"
-                alt=""
+                alt="Cелфи-палка Следуй за мной"
               >
             </li>
           </ul>
@@ -643,9 +651,12 @@
           <p class="page-footer__contacts-address">
             г. Москва, ул. Строителей, 15
           </p>
-          <p class="page-footer__contacts-phone">
+          <a 
+            class="page-footer__contacts-phone"
+            href="tel:+74954959595"
+          >
             Тел.: +7 (495) 495-95-95
-          </p>
+          </a>
         </section>
 
         <section class="page-footer__site-navigation">
@@ -712,7 +723,7 @@
         <div class="page-footer__copyright copyright">
           <a
             class="copyright__link"
-            href="https://htmlacademy.ru/"
+            href="https://htmlacademy.ru/intensive/htmlcss"
           >
             <span class="visually-hidden">
               HTML-academy
