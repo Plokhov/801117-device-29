@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -77,12 +77,12 @@
             <li class="site-list__item">
               <a
                 class="site-list__link site-list__link--catalog"
-                href="catalog.html"
+                href="#"
               >
                 Каталог товаров
               </a>
               <ul
-                class="site-list__catalog-navigation catalog-list"
+                class="site-list__catalog-navigation catalog-list catalog-list--close"
               >
                 <li class="catalog-list__item">
                   <a class="catalog-list__link" href="#">
@@ -210,31 +210,33 @@
               height="485"
               alt="Мотивирующий фитнес-браслет"
             >
-            <p class="promo__number">
-              02
-            </p>
-            <h3 class="promo__title">
-              Худеем<br> правильно!
-            </h3>
-            <p class="promo__description">
-              Мотивирующие фитнес браслеты помогут найти в себе силы
-              не пропускать занятия и соблюдать диету.
-            </p>
-            <a class="promo__button button" href="#">
-              Подробнее
-            </a>
-            <table class="promo__characteristic characteristic">
-              <tr>
-                <td class="characteristic__value">
-                  48 часов
-                </td>
-              </tr>
-              <tr>
-                <th class="characteristic__name">
-                  Без подзарядки
-                </th>
-              </tr>
-            </table>
+            <div class="promo__info">
+              <p class="promo__number">
+                02
+              </p>
+              <h3 class="promo__title">
+                Худеем<br> правильно!
+              </h3>
+              <p class="promo__description">
+                Мотивирующие фитнес браслеты помогут найти в себе силы
+                не пропускать занятия и соблюдать диету.
+              </p>
+              <a class="promo__button button" href="#">
+                Подробнее
+              </a>
+              <table class="promo__characteristic characteristic">
+                <tr>
+                  <td class="characteristic__value">
+                    48 часов
+                  </td>
+                </tr>
+                <tr>
+                  <th class="characteristic__name">
+                    Без подзарядки
+                  </th>
+                </tr>
+              </table>
+            </div>
           </li>
           <li class="promo__item">
             <img
@@ -244,37 +246,39 @@
               height="334"
               alt="Квадрокоптер с лазером"
             >
-            <p class="promo__number">
-              03
-            </p>
-            <h3 class="promo__title">
-              Порхает как бабочка, жалит как пчела!
-            </h3>
-            <p class="promo__description">
-              Этот обычный, на первый взгляд квадрокоптер оснащен
-              мощным лазером, замаскированным под стандартную камеру.
-            </p>
-            <a class="promo__button button" href="#">
-              Подробнее
-            </a>
-            <table class="promo__characteristic characteristic">
-              <tr>
-                <td class="characteristic__value">
-                  800 м
-                </td>
-                <td class="characteristic__value">
-                  50 м
-                </td>
-              </tr>
-              <tr>
-                <th class="characteristic__name">
-                  Дальность полета
-                </th>
-                <th class="characteristic__name">
-                  Радиус поражения
-                </th>
-              </tr>
-            </table>
+            <div class="promo__info">
+              <p class="promo__number">
+                03
+              </p>
+              <h3 class="promo__title">
+                Порхает как бабочка, жалит как пчела!
+              </h3>
+              <p class="promo__description">
+                Этот обычный, на первый взгляд квадрокоптер оснащен
+                мощным лазером, замаскированным под стандартную камеру.
+              </p>
+              <a class="promo__button button" href="#">
+                Подробнее
+              </a>
+              <table class="promo__characteristic characteristic">
+                <tr>
+                  <td class="characteristic__value">
+                    800 м
+                  </td>
+                  <td class="characteristic__value">
+                    50 м
+                  </td>
+                </tr>
+                <tr>
+                  <th class="characteristic__name">
+                    Дальность полета
+                  </th>
+                  <th class="characteristic__name">
+                    Радиус поражения
+                  </th>
+                </tr>
+              </table>
+            </div>
           </li>
         </ul>
         <div class="promo__slider-controls">
@@ -424,7 +428,7 @@
             </li>
           </ul>
           <ul class="services__list">
-            <li class="services__item">
+            <li class="services__item services__item--delivery">
               <h3 class="services__item-title">
                 Доставка
               </h3>
@@ -434,7 +438,7 @@
                 заработаем поднимая его на ваш этаж.
               </p>
             </li>
-            <li class="services__item visually-hidden">
+            <li class="services__item services__item--guarantee">
               <h3 class="services__item-title">
                 Гарантия
               </h3>
@@ -444,7 +448,7 @@
                 Товар, не дом, конечно же.
               </p>
             </li>
-            <li class="services__item visually-hidden">
+            <li class="services__item services__item--credit">
               <h3 class="services__item-title">
                 Кредит
               </h3>
@@ -602,9 +606,12 @@
           <p class="page-footer__contacts-address">
             г. Москва, ул. Строителей, 15
           </p>
-          <p class="page-footer__contacts-phone">
+          <a 
+            class="page-footer__contacts-phone"
+            href="tel:+74954959595"
+          >
             Тел.: +7 (495) 495-95-95
-          </p>
+          </a>
         </section>
 
         <section class="page-footer__site-navigation">
@@ -720,7 +727,7 @@
             Текст письма:
           </span>
           <textarea
-            class="modal-write__textarea"
+            class="modal-write__textarea modal-write__letter"
             name="letter"
             id="letter"
             placeholder="В свободной форме"
@@ -747,12 +754,7 @@
         Карта
       </h2>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.
-          112374947364!2d37.527429316010654!3d55
-          .68703400452986!2m3!1f0!2f0!3f0!3m2!1i1024!
-          2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!
-          2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!
-          5e0!3m2!1sru!2sru!4v1604909157530!5m2!1sru!2sru"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947364!2d37.527429316010654!3d55.68703400452986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1605003125004!5m2!1sru!2sru"
         width="994"
         height="593" 
         allowfullscreen=""
@@ -765,7 +767,8 @@
       </button>
     </section>
 
-    <script src="js/write-us.js"></script>
-    <script src="js/map.js"></script>
+    <script src="js/catalog-header.min.js"></script>
+    <script src="js/write-us.min.js"></script>
+    <script src="js/map.min.js"></script>
   </body>
 </html>
