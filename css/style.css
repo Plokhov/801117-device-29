@@ -613,13 +613,12 @@ input[type="radio"].visually-hidden {
 }
 
 .promo__item {
- display: flex;
- justify-content: space-between;
+  display: none;
 }
 
-.promo__item:nth-child(2),
-.promo__item:last-child {
-  display: none;
+.promo__item--active {
+  display: flex;
+  justify-content: space-between;
 }
 
 .promo__image {
@@ -911,11 +910,6 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-black);
 }
 
-.services__slider-button--current,
-.services__slider-button:active {
-  color: var(--special-yellow);
-}
-
 .services__slider-button--current::before {
   top: 0;
   width: 277px;
@@ -923,13 +917,10 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-black);
 }
 
-.services__slider-button--current:hover {
-  color: var(--basic-black);
-}
-
-.services__slider-button--current:hover::before {
-  width: 100%;
-  background-color: var(--special-yellow-dark);
+.services__slider-button--current,
+.services__slider-button--current:focus,
+.services__slider-button:active {
+  color: var(--special-yellow);
 }
 
 .services__list {
@@ -940,13 +931,13 @@ input[type="radio"].visually-hidden {
 }
 
 .services__item {
+  display: none;
   position: relative;
   margin-top: -8px;
 }
 
-.services__item--guarantee,
-.services__item--credit {
-  display: none;
+.services__item--active {
+  display: block;
 }
 
 .services__item::before {

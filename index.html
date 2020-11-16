@@ -166,7 +166,7 @@
           Промо-акция
         </h2>
         <ul class="promo__list">
-          <li class="promo__item">
+          <li class="promo__item promo__item--active">
             <img
               class="promo__image"
               src="img/promo-slid-1.png"
@@ -295,7 +295,10 @@
         </ul>
         <div class="promo__slider-controls">
           <button
-            class="promo__slider-button promo__slider-button--current"
+            class="
+              promo__slider-button
+              promo__slider-button--current
+              promo__slider-button--1"
             type="button"
           >
             <span class="visually-hidden">
@@ -303,7 +306,7 @@
             </span>
           </button>
           <button
-            class="promo__slider-button"
+            class="promo__slider-button promo__slider-button--2"
             type="button"
           >
             <span class="visually-hidden">
@@ -311,7 +314,7 @@
             </span>
           </button>
           <button
-            class="promo__slider-button"
+            class="promo__slider-button promo__slider-button--3"
             type="button"
           >
             <span class="visually-hidden">
@@ -401,7 +404,11 @@
             </li>
           </ul>
           <ul class="services__list">
-            <li class="services__item services__item--delivery">
+            <li class="
+              services__item
+              services__item--delivery
+              services__item--active"
+            >
               <h3 class="services__item-title">
                 Доставка
               </h3>
@@ -765,6 +772,7 @@
     </section>
 
     <script src="js/catalog-header.min.js"></script>
+    <script src="js/main-sliders.min.js"></script>
     <script src="js/write-us.min.js"></script>
     <script src="js/map.min.js"></script>
   </body>
