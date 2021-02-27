@@ -24,7 +24,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 Получится вот так:
 
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29038006-a4ff0afc-7bae-11e7-9786-c06aa082f7a4.jpg">
+<img width="769" alt="" src="https://b.radikal.ru/b04/2102/ec/e0f53e87d191.png">
 
 #### 3. Клонируйте репозиторий на свой компьютер
 
