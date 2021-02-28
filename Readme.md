@@ -1,10 +1,10 @@
-# «Девайс»(html-code)
+# Интернет магазин гаджетов «Девайс»(html-code)
 
 ### index
-<img width="769" alt="index" src="https://b.radikal.ru/b04/2102/ec/e0f53e87d191.png">
+<img width="900" alt="index" src="https://b.radikal.ru/b04/2102/ec/e0f53e87d191.png">
 
 ### catalog
-<img width="769" alt="catalog" src="https://b.radikal.ru/b06/2102/5b/7e6380ff9e6e.png">
+<img width="900" alt="catalog" src="https://b.radikal.ru/b06/2102/5b/7e6380ff9e6e.png">
 
 
 ## Техническое задание
